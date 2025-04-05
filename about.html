@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quem Somos - Waya Frɛm</title>
+    <link rel="stylesheet" href="about.css">
+</head>
+<body>
+    <table class="tabela-principal">
+        <!-- Cabeçalho -->
+        <tr>
+            <td class="bg-verde logo-cell" rowspan="2"><img src="Vector.png" alt="Logo Waya Frem"></td>
+            <td class="bg-verde titulo-site" colspan="2" rowspan="2">Waya Frɛm</td>
+            <td class="bg-verde"></td>
+            <td class="bg-verde"></td>
+            <td class="bg-verde pesquisa-cell" colspan="4" rowspan="2">
+                <input type="text" placeholder="Pesquisar...">
+            </td>
+            <td class="bg-verde search-icon"><img src="search_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png" alt="Ícone de busca"></td>
+            <td class="bg-verde login-cell" colspan="3" rowspan="2">Login/Cadastro</td>
+            <td class="bg-verde"></td>
+            <td class="bg-verde headset-cell" colspan="2" rowspan="2"><img src="headset.png" alt="Suporte"></td>
+            <td class="bg-verde cart-cell" rowspan="2"><img src="shopping-cart.png" alt="Carrinho"></td>
+            <td class="bg-verde"></td>
+        </tr>
+        <tr>
+            <td class="bg-verde"></td>
+            <td class="bg-verde"></td>
+            <td class="bg-verde"></td>
+            <td class="bg-verde"></td>
+            <td class="bg-verde"></td>
+        </tr>
+        
+        <!-- Menu -->
+        <tr class="bg-vermelho">
+            <td class="bg-vermelho"></td>
+            <td class="bg-vermelho menu-item" colspan="2"><a href="index.html">Home</a></td>
+            <td class="bg-vermelho"></td>
+            <td class="bg-vermelho"></td>
+            <td class="bg-vermelho menu-item" colspan="2"><a href="about.html">Quem Somos</a></td>
+            <td class="bg-vermelho"></td>
+            <td class="bg-vermelho menu-item" colspan="3" 
+                onclick="document.getElementById('produtos-dropdown').style.display = 'block'"
+                onmouseleave="document.getElementById('produtos-dropdown').style.display = 'none'">
+    
+                <a href="#">Produtos ▼</a>
+                <div class="dropdown-content" id="produtos-dropdown">
+                    <a href="motherboard.html">Placa-mãe</a>
+                    <a href="videocard.html">Placa de Vídeo</a>
+                </div>
+            </td>
+            <td class="bg-vermelho"></td>
+            <td class="bg-vermelho menu-item" colspan="4"><a href="contact.html">Contato</a></td>
+            <td class="bg-vermelho"></td>
+            <td class="bg-vermelho"></td>
+        </tr>
+        
+        <!-- Conteúdo -->
+        <tr>
+            <td></td>
+            <td class="content" colspan="16">
+                <h1>Quem Somos</h1>
+                <h2>Nosso Propósito e Missão</h2>
+                
+                <div class="about-section">
+                    <h3>Nossa História</h3>
+                    <p>A Waya Frem nasceu em 2020, em meio a uma revolução tecnológica que exigia soluções de hardware cada vez mais poderosas e eficientes. Fundada por um grupo de engenheiros apaixonados por tecnologia, a empresa surgiu com o objetivo de criar produtos que não apenas atendessem às demandas do mercado, mas que também superassem as expectativas dos usuários mais exigentes.</p>
+                    <p>Hoje, somos reconhecidos como uma das líderes no desenvolvimento de hardwares de alta performance, oferecendo soluções que impulsionam desde gamers até grandes empresas de tecnologia.</p>
+                </div>
+                
+                <div class="about-section">
+                    <h3>Nossa Missão</h3>
+                    <table class="mission-table">
+                        <tr>
+                            <td><img src="inovacao.png" alt="Inovação"></td>
+                            <td>
+                                <h4>Inovar</h4>
+                                <p>Criar produtos que estejam sempre à frente do seu tempo.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="qualidade.png" alt="Qualidade"></td>
+                            <td>
+                                <h4>Qualificar</h4>
+                                <p>Garantir a excelência em cada detalhe, desde o design até a entrega.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><img src="impacto.png" alt="Impacto"></td>
+                            <td>
+                                <h4>Impactar</h4>
+                                <p>Contribuir para um futuro mais conectado e eficiente.</p>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                
+                <div class="about-section">
+                    <h3>Nossos Valores</h3>
+                    <table class="values-table">
+                        <tr>
+                            <td>Inovação</td>
+                            <td>Estamos sempre em busca de novas ideias e tecnologias.</td>
+                        </tr>
+                        <tr>
+                            <td>Qualidade</td>
+                            <td>Cada produto Waya Frem é testado e aprovado pelos melhores especialistas.</td>
+                        </tr>
+                        <tr>
+                            <td>Sustentabilidade</td>
+                            <td>Desenvolvemos soluções que respeitam o meio ambiente.</td>
+                        </tr>
+                        <tr>
+                            <td>Transparência</td>
+                            <td>Mantemos um relacionamento aberto e honesto com nossos clientes.</td>
+                        </tr>
+                    </table>
+                </div>
+            </td>
+            <td></td>
+        </tr>
+        
+        <!-- Rodapé -->
+        <tr>
+            <td></td>
+            <td class="footer" colspan="16">
+                <p>&copy; 2023 Waya Frɛm. Todos os direitos reservados.</p>
+                <div class="social-icons">
+                    <a href="#"><img src="facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="instagram.png" alt="Instagram"></a>
+                    <a href="#"><img src="linkedin.png" alt="LinkedIn"></a>
+                </div>
+            </td>
+            <td></td>
+        </tr>
+    </table>
+</body>
+</html>

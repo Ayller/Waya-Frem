@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Placa-mãe - Waya Frem</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <table class="tabela-principal">
+        <!-- Cabeçalho -->
+        <tr>
+            <td class="bg-verde logo-cell" rowspan="2"><img src="Vector.png" alt="Logo Waya Frem"></td>
+            <td class="bg-verde titulo-site" colspan="2" rowspan="2">Waya Frɛm</td>
+            <td class="bg-verde"></td>
+            <td class="bg-verde"></td>
+            <td class="bg-verde pesquisa-cell" colspan="4" rowspan="2">
+                <input type="text" placeholder="Pesquisar...">
+            </td>
+            <td class="bg-verde search-icon"><img src="search_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png" alt="Ícone de busca"></td>
+            <td class="bg-verde login-cell" colspan="3" rowspan="2">Login/Cadastro</td>
+            <td class="bg-verde"></td>
+            <td class="bg-verde headset-cell" colspan="2" rowspan="2"><img src="headset.png" alt="Suporte"></td>
+            <td class="bg-verde cart-cell" rowspan="2"><img src="shopping-cart.png" alt="Carrinho"></td>
+            <td class="bg-verde"></td>
+        </tr>
+        <tr>
+            <td class="bg-verde"></td>
+            <td class="bg-verde"></td>
+            <td class="bg-verde"></td>
+            <td class="bg-verde"></td>
+            <td class="bg-verde"></td>
+        </tr>
+
+        <!-- Menu -->
+        <tr class="bg-vermelho">
+            <td></td>
+            <td class="menu-item" colspan="2"><a href="index.html">Home</a></td>
+            <td></td>
+            <td></td>
+            <td class="menu-item" colspan="2"><a href="about.html">Quem Somos</a></td>
+            <td></td>
+            <td class="menu-item dropdown" colspan="3">
+                <a href="#" id="produtos-link">Produtos ▼</a>
+                <div class="dropdown-content" id="produtos-dropdown">
+                    <a href="motherboard.html">Placa-mãe</a>
+                    <a href="videocard.html">Placa de Vídeo</a>
+                </div>
+            </td>
+            <td></td>
+            <td class="menu-item" colspan="6"><a href="contact.html">Contato</a></td>
+            <td></td>
+            <td></td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td colspan="16" class="product-content">
+                <div class="product-container">
+                    <div class="product-image">
+                        <img src="placamae.png" alt="Placa-mãe">
+                    </div>
+                    <div class="product-info">
+                        <h1>Placa-mãe Gigabyte H410M</h1>
+                        <table class="specs-table">
+                            <tr><td>Soquete:</td><td>LGA 1200</td></tr>
+                            <tr><td>Memória:</td><td>2x DDR4 (64GB max)</td></tr>
+                            <tr><td>Armazenamento:</td><td>1x M.2 NVMe + 4x SATA</td></tr>
+                        </table>
+                    </div>
+                </div>
+            </td>
+            <td></td>
+        </tr>
+        <!-- Rodapé -->
+        <tr>
+            <td></td>
+            <td class="footer" colspan="16">
+                <p>&copy; 2023 Waya Frɛm. Todos os direitos reservados.</p>
+            </td>
+            <td></td>
+        </tr>
+    </table>
+
+    <!-- JavaScript -->
+    <script>
+        // Controle do menu suspenso
+        document.getElementById('produtos-link').addEventListener('click', function(e) {
+            e.preventDefault();
+            const dropdown = document.getElementById('produtos-dropdown');
+            dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+        });
+    </script>
+</body>
+</html>

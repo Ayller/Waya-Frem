@@ -1,0 +1,171 @@
+/* Remove bordas do cabeçalho e menu */
+.tabela-principal tr:first-child td,
+.tabela-principal tr:nth-child(2) td,
+.tabela-principal tr.bg-vermelho td {
+    border: none !important;
+}
+
+/* Mantém bordas apenas no conteúdo */
+.tabela-principal tr:not(.bg-vermelho):not(:first-child):not(:nth-child(2)) td {
+    border: 1px solid #ddd;
+}
+/* Remove TODAS as bordas das células do menu */
+.bg-vermelho td {
+    border: none !important;
+    position: relative; /* Importante para o dropdown */
+}
+
+/* Remove bordas extras do cabeçalho (se necessário) */
+.bg-verde td {
+    border: none !important;
+}
+
+/* Garante que o dropdown funcione corretamente */
+.dropdown-content {
+    border: 1px solid #ddd !important; /* Mantém borda apenas no dropdown */
+}
+/* Estilos gerais */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.tabela-principal {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tabela-principal td {
+    padding: 8px;
+    border: 1px solid #ddd;
+}
+
+/* Cores de fundo */
+.bg-verde {
+    background-color: rgb(85, 248, 107);
+}
+
+.bg-vermelho {
+    background-color: rgb(255, 72, 72);
+}
+
+/* Cabeçalho */
+.logo-cell img {
+    width: 160px;
+}
+
+.titulo-site {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+}
+
+.search-icon img, 
+.headset-cell img, 
+.cart-cell img {
+    width: 24px;
+    height: auto;
+}
+
+.pesquisa-cell input {
+    width: 100%;
+    padding: 5px;
+}
+
+/* Menu */
+.menu-item {
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.menu-item a {
+    color: white;
+    text-decoration: none;
+}
+
+
+/* Formulário */
+.contact-content {
+    padding: 30px;
+    text-align: center;
+}
+
+#contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 5px;
+}
+
+#contact-form label {
+    display: block;
+    margin-top: 15px;
+    text-align: left;
+    font-weight: bold;
+}
+
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#contact-form textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+#contact-form button {
+    background-color: rgb(255, 72, 72);
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    margin-top: 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Rodapé */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: #f0f0f0;
+}
+/* ===== MENU SUSPENSO ===== */
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ff4848;
+    color: white;
+  }
+  
+  /* Mostra o dropdown ao passar o mouse */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }

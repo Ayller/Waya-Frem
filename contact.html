@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Waya Frem</title>
+    <!-- Link para o CSS externo -->
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <table class="tabela-principal">
+        <tr>
+            <td class="bg-verde logo-cell" rowspan="2"><img src="Vector.png" alt="Logo Waya Frem"></td>
+            <td class="bg-verde titulo-site" colspan="2" rowspan="2">Waya Frɛm</td>
+            <td class="bg-verde"></td>
+            <td class="bg-verde"></td>
+            <td class="bg-verde pesquisa-cell" colspan="4" rowspan="2">
+                <input type="text" placeholder="Pesquisar...">
+            </td>
+            <td class="bg-verde search-icon"><img src="search_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.png" alt="Ícone de busca"></td>
+            <td class="bg-verde login-cell" colspan="3" rowspan="2">Login/Cadastro</td>
+            <td class="bg-verde"></td>
+            <td class="bg-verde headset-cell" colspan="2" rowspan="2"><img src="headset.png" alt="Suporte"></td>
+            <td class="bg-verde cart-cell" rowspan="2"><img src="shopping-cart.png" alt="Carrinho"></td>
+            <td class="bg-verde"></td>
+        </tr>
+        <tr>
+            <td class="bg-verde"></td>
+            <td class="bg-verde"></td>
+            <td class="bg-verde"></td>
+            <td class="bg-verde"></td>
+            <td class="bg-verde"></td>
+        </tr>
+        
+        <!-- Menu -->
+        <tr class="bg-vermelho">
+            <td class="bg-vermelho"></td>
+            <td class="bg-vermelho menu-item" colspan="2"><a href="index.html">Home</a></td>
+            <td class="bg-vermelho"></td>
+            <td class="bg-vermelho"></td>
+            <td class="bg-vermelho menu-item" colspan="2"><a href="about.html">Quem Somos</a></td>
+            <td class="bg-vermelho"></td>
+            <td class="bg-vermelho menu-item" colspan="3" 
+                onclick="document.getElementById('produtos-dropdown').style.display = 'block'"
+                onmouseleave="document.getElementById('produtos-dropdown').style.display = 'none'">
+    
+                <a href="#">Produtos ▼</a>
+                <div class="dropdown-content" id="produtos-dropdown">
+                    <a href="motherboard.html">Placa-mãe</a>
+                    <a href="videocard.html">Placa de Vídeo</a>
+                </div>
+            </td>
+            <td class="bg-vermelho"></td>
+            <td class="bg-vermelho menu-item" colspan="4"><a href="contact.html">Contato</a></td>
+            <td class="bg-vermelho"></td>
+            <td class="bg-vermelho"></td>
+        </tr>
+
+        <!-- Formulário de contato -->
+        <tr>
+            <td></td>
+            <td class="contact-content" colspan="16">
+                <h1>Fale Conosco</h1>
+                <form id="contact-form">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" required>
+
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" required>
+
+                    <label for="message">Mensagem:</label>
+                    <textarea id="message" required></textarea>
+
+                    <button type="submit">Enviar</button>
+                </form>
+            </td>
+            <td></td>
+        </tr>
+
+        <!-- Rodapé -->
+        <tr>
+            <td></td>
+            <td class="footer" colspan="16">
+                <p>&copy; 2023 Waya Frɛm. Todos os direitos reservados.</p>
+            </td>
+            <td></td>
+        </tr>
+    </table>
+
+    <!-- JavaScript incorporado (como você pediu) -->
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const nome = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const mensagem = document.getElementById('message').value;
+
+            if (nome && email && mensagem) {
+                alert(`Obrigado, ${nome}! Sua mensagem foi enviada.`);
+                this.reset();
+            } else {
+                alert("Preencha todos os campos!");
+            }
+        });
+    </script>
+</body>
+</html>

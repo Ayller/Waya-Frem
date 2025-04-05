@@ -1,0 +1,86 @@
+/* Remove bordas do cabeçalho e menu */
+.tabela-principal tr:first-child td,
+.tabela-principal tr:nth-child(2) td,
+.tabela-principal tr.bg-vermelho td {
+    border: none !important;
+}
+
+/* Mantém bordas apenas no conteúdo */
+.tabela-principal tr:not(.bg-vermelho):not(:first-child):not(:nth-child(2)) td {
+    border: 1px solid #ddd;
+}
+/* Remove TODAS as bordas das células do menu */
+.bg-vermelho td {
+  border: none !important;
+  position: relative; /* Importante para o dropdown */
+}
+
+/* Remove bordas extras do cabeçalho (se necessário) */
+.bg-verde td {
+  border: none !important;
+}
+
+/* Garante que o dropdown funcione corretamente */
+.dropdown-content {
+  border: 1px solid #ddd !important; /* Mantém borda apenas no dropdown */
+}
+/* ===== PÁGINAS DE PRODUTOS ===== */
+.product-container {
+    display: flex;
+    gap: 30px;
+    padding: 20px;
+}
+
+.product-image img {
+    max-width: 400px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.specs-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.specs-table td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+.specs-table td:first-child {
+    font-weight: bold;
+    width: 30%;
+    background-color: #f5f5f5;
+}
+/* ===== MENU SUSPENSO ===== */
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ff4848;
+    color: white;
+  }
+  
+  /* Mostra o dropdown ao passar o mouse */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
